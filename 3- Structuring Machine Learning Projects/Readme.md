@@ -11,7 +11,7 @@ This is the third course of the deep learning specialization at [Coursera](https
       * [Why ML Strategy](#why-ml-strategy)
       * [Orthogonalization](#orthogonalization)
       * [Single number evaluation metric](#single-number-evaluation-metric)
-      * [Satisfying and Optimizing metric](#satisfying-and-optimizing-metric)
+      * [Satisficing and Optimizing metric](#satisfying-and-optimizing-metric)
       * [Train/dev/test distributions](#traindevtest-distributions)
       * [Size of the dev and test sets](#size-of-the-dev-and-test-sets)
       * [When to change dev/test sets and metrics](#when-to-change-devtest-sets-and-metrics)
@@ -76,11 +76,11 @@ Here are the course summary as its given on the course [link](https://www.course
   1. You'll have to fit training set well on cost function (near human level performance if possible).
      - If it's not achieved you could try bigger network, another optimization algorithm (like Adam)...
   2. Fit dev set well on cost function.
-     - If its not achieved you could try regularization, bigger training set...
+     - If it's not achieved you could try regularization, bigger training set...
   3. Fit test set well on cost function.
-     - If its not achieved you could try bigger dev. set...
+     - If it's not achieved you could try bigger dev. set...
   4. Performs well in real world.
-     - If its not achieved you could try change dev. set, change cost function...
+     - If it's not achieved you could try change dev. set, change cost function...
 
 ### Single number evaluation metric
 
@@ -96,17 +96,17 @@ Here are the course summary as its given on the course [link](https://www.course
   - **Precision**: percentage of true cats in the recognized result: P = 3/(3 + 1) 
   - **Recall**: percentage of true recognition cat of the all cat predictions: R = 3/(3 + 2)
   - **Accuracy**: (3+4)/10
-- Using a precision/recall for evaluation is good in a lot of cases, but separately they don't tell you which algothims is better. Ex:
+- Using a precision/recall for evaluation is good in a lot of cases, but separately they don't tell you which algorithm is better. Ex:
 
   | Classifier | Precision | Recall |
   | ---------- | --------- | ------ |
   | A          | 95%       | 90%    |
   | B          | 98%       | 85%    |
-- A better thing is to combine precision and recall in one single (real) number evaluation metric. There a metric called `F1` score, which combines them
-  - You can think of `F1` score as an average of precision and recall
+- A better thing is to combine precision and recall into one single (real) number evaluation metric. There is a metric called `F1` score, which combines them
+  - You can think of `F1` score as harmonic mean of precision and recall
     `F1 = 2 / ((1/P) + (1/R))`
 
-### Satisfying and Optimizing metric
+### Satisficing and Optimizing metric
 
 - Its hard sometimes to get a single number evaluation metric. Ex:
 
