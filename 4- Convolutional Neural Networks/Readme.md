@@ -210,7 +210,7 @@ Here is the course summary as given on the course [link](https://www.coursera.or
   - Hint number of parameters here are: `(3x3x3x10) + 10 = 280`
 - The last example forms a layer in the CNN.
 - Hint: no matter the size of the input, the number of the parameters is same if filter size is same. That makes it less prone to overfitting.
-- ![](Images/SummaryofCNNLayerNotation.png)
+  - ![](Images/SummaryofCNNLayerNotation.PNG)
 - Here are some notations we will use. If layer l is a conv layer:
 
   ```
